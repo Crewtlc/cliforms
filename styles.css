@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #EDE8DC; /* Light sky blue background */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.railway-button {
+  font-family:"Montserrat",sans-serif;
+  background-color: #A5B68D; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.railway-button::before {
+  content: url('railway-symbol.png'); /* Replace with your railway symbol image */
+  position: absolute;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.railway-button:hover {
+  background-color: #E7CCCC;
+}
+
+.railway-button:active {
+  background-color: #921A40;
+}
